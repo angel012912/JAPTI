@@ -1,0 +1,335 @@
+:root {
+    --primario: #E7E6E1;
+    --secundario: #F7F6E7;
+    --terciario: #F2A154;
+    --cuarto: rgb(17, 45, 78);
+    --font: Helvetica;
+    --title: 2.5rem
+}
+
+body {
+    background-color: var(--primario);
+    font-family: var(--font);
+}
+
+/*** INICIO (Nombre y Slogan) ***/
+
+#inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.nombre {
+    color: var(--cuarto);
+    font-size: 15rem;
+    margin-bottom: 0px;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+
+.segundaParte {
+    color: var(--terciario);
+    animation-delay: .5s;
+}
+
+.eslogan{
+    font-size: 5rem;
+    font-weight: lighter;
+    color: var(--cuarto);
+    text-align: right;        
+}
+
+.mostrarTitulo{
+    opacity: 0;
+    animation: revealText 1s forwards;
+}
+
+@keyframes revealText{
+    form{
+        transform: translateX(100px);
+    }to{
+        opacity: 1;
+        transform: none;
+    }
+}
+
+
+/*** CONTENIDO DE LA PÁGINA ***/
+.content {
+    margin: 0 10rem;
+}
+
+
+/*** QUIENES SOMOS ***/
+.quienesSomos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.quienesSomos h3 {
+    font-size: var(--title);
+}
+
+.quienesSomos p {
+    text-align: justify;
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+
+/*** SERVICIOS ***/
+.servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicios h3 {
+    font-size: var(--title);
+}
+
+/* Caja de SERVICIOS */
+.cajaServicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    width: 100%;
+    gap: 1em; /* Cambiar espacio entre cuadros */
+}
+
+.servicio {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    aspect-ratio: 1;
+    width: 100%; /*Este se puede editar para hacer los cuadrados más pequeños*/
+    border: 2px solid var(--cuarto);
+    box-shadow: 3px 3px 0px;
+    outline: none;
+}
+
+
+/*** PORTAFOLIO ***/
+.portafolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portafolio h3 {
+    font-size: var(--title);
+}
+
+.slides {}
+
+
+/*** CONTACTO ***/
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto h3 {
+    font-size: var(--title);
+}
+
+.contacto form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.contacto input {
+    width: 100%;
+    min-width: none;
+    height: 2.5em;
+    border: 2px solid var(--cuarto);
+    box-shadow: 2px 2px 0px;
+    outline: none;
+    font-size: 1em;
+}
+
+.contacto input:focus {
+    border: 2px solid var(--terciario);
+}
+
+.contacto textarea:focus {
+    border: 2px solid var(--terciario);
+}
+
+.contacto textarea {
+    width: 100%;
+    border: 2px solid var(--cuarto);
+    box-shadow: 3px 3px 0px;
+    outline: none;
+    font-family: var(--font);
+    font-size: 1em;
+}
+
+.elementosForm {
+    display: grid;
+    grid-column: auto;
+    grid-template-areas: "name email" "comment comment";
+    gap: 1em;
+}
+
+.formName {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    grid-column: name;
+    gap: 0.5em;
+}
+
+.formEmail {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    grid-column: email;
+    gap: 0.5em;
+
+}
+
+.formComment {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    grid-column: comment;
+    gap: 0.5em;
+
+}
+
+.contacto button {
+    align-self: flex-end;
+    border: 2px solid var(--cuarto);
+    background-color: var(--terciario);
+    padding: 15px 32px;
+    box-shadow: 3px 3px 0px;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.contacto button:hover{
+    transform: translate(3px, 3px);
+    box-shadow: 0px 0px 0px;
+
+}
+
+.contacto label{
+    font-size: 1rem;
+}
+
+
+/*** PIE DE PÁGINA ***/
+
+.piePagina {
+    display: flex;
+}
+
+
+/*** NAVBAR ***/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10rem;
+}
+
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+    gap: 3em;
+    align-items: center;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: var(--cuarto);
+    
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar h4 {
+    color: var(--cuarto);
+    font-size: 2rem;
+    margin: 0;
+}
+
+.navbar span{ 
+    color: var(--terciario);
+}
+
+
+@media (max-width: 900px) {
+    .content {
+        margin: 0 1rem;
+    }
+    .cajaServicios {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+    }
+    .elementosForm {
+        grid-template-areas: "name" "email" "comment";
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    #inicio {
+       max-width: 100%;
+       align-items: center;
+    }
+
+    .nombre {
+        font-size: 6rem;
+    }
+
+    .eslogan{
+        font-size: 2rem;
+        
+    }
+
+}
+
+@media (max-width: 300px) {
+    .content {
+        margin: 0;
+    }
+    .cajaServicios {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1em;
+    }
+    .contacto button {
+        width: 100%;
+    }
+
+    #inicio {
+        max-width: 100%;
+        align-items: center;
+     }
+ 
+     .nombre {
+         font-size: 3rem;
+     }
+ 
+     .eslogan{
+         font-size: 1rem;
+         
+     }
+}
