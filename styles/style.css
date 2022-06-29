@@ -1,15 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
 :root {
     --primario: #E7E6E1;
     --secundario: #F7F6E7;
     --terciario: #F2A154;
-    --cuarto: rgb(17, 45, 78);
+    --cuarto: #112d4e;
     --font: Helvetica;
     --title: 2.5rem
 }
-
-body {
+html, body {
     background-color: var(--primario);
     font-family: var(--font);
+    height: 100%;
 }
 
 /*** INICIO (Nombre y Slogan) ***/
@@ -26,6 +34,7 @@ body {
     margin-bottom: 0px;
     font-weight: 600;
     margin-top: 5rem;
+    margin-right: 10px;
 }
 
 
@@ -39,6 +48,7 @@ body {
     font-weight: lighter;
     color: var(--cuarto);
     text-align: right;
+    margin-right: 20px;
     margin-top: 0px;
     opacity: 0;
     animation: revealEslogan 1s forwards;
@@ -48,6 +58,51 @@ body {
 .mostrarTitulo{
     opacity: 0;
     animation: revealText 2s forwards;
+}
+section#inicio{
+    height: 100%;
+    background-size: cover;
+}
+
+
+#inicio a span {
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb04 2s infinite;
+    animation: sdb04 2s infinite;
+    box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb04 {
+    0% {
+      -webkit-transform: rotate(-45deg) translate(0, 0);
+    }
+    20% {
+      -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+    }
+    40% {
+      -webkit-transform: rotate(-45deg) translate(0, 0);
+    }
+}
+
+@keyframes sdb04 {
+    0% {
+      transform: rotate(-45deg) translate(0, 0);
+    }
+    20% {
+      transform: rotate(-45deg) translate(-10px, 10px);
+    }
+    40% {
+      transform: rotate(-45deg) translate(0, 0);
+    }
 }
 
 @keyframes revealText{
@@ -78,6 +133,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-top: 30px;
 }
 
 .quienesSomos h3 {
