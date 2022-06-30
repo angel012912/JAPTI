@@ -1,7 +1,12 @@
 setInterval(function () {
   const show = document.querySelector("span[data-show]");
-  const next =
-    show.nextElementSibling || document.querySelector("span:first-child");
+  if(show.nextElementSibling){
+    var next = show.nextElementSibling;
+  }else{
+    var next = document.getElementById("primerTexto");
+  }
+
+  console.log(next);
   const up = document.querySelector("span[data-up]");
 
   if (up) {

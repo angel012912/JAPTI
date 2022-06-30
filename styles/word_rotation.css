@@ -7,10 +7,12 @@
     justify-content: flex-end;
     align-items: flex-start;
     min-height: 100vh;
+    margin-right: 20px;
 }
 
 .word_rotation h2{
-  mari
+  margin-top: 0;
+  text-align: end;
   width: 980px;
   font-size: 100px;
   font-family: Helvetica;
@@ -24,6 +26,9 @@
     position: relative;
     overflow: hidden;
     margin-top: var(--offset);
+
+    display: flex;
+    justify-content: flex-end;
   }
   
   .mask span {
@@ -32,7 +37,6 @@
     position: absolute;
     top: 100px;
     padding-bottom: var(--offset);
-  
     background-size: 100% 100%;
     -webkit-background-clip: text;
     background-clip: text;
