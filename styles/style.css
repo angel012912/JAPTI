@@ -170,7 +170,7 @@
     
     .social_media a {
         text-decoration: none;
-        margin: 5px 10px;
+        margin: 20px 10px;
     }
     
     .social_media a svg {
@@ -180,7 +180,7 @@
     }
     
     .social_media a:hover {
-        transform: scale(1.2);
+        transform: scale(1.5);
         transition: .5s;
     }
     
@@ -583,7 +583,8 @@
         outline-color: var(--cuarto);
         background-color: var(--primario);
     }
-    /* Media Querys */
+
+    /* Media Querys (Responsive) */    
     
     @media (max-width: 900px) {
         .content {
@@ -601,8 +602,13 @@
             display: none;
         }
         #inicio {
-            margin-top: 60%;
             max-width: 100%;
+            flex-direction: column-reverse;
+            justify-content: flex-end;
+        }
+        .texto{
+            width: 100%;
+            margin-top: 0;
         }
         .nombre {
             font-size: 6rem;
@@ -612,6 +618,9 @@
         }
         #inicio a span {
             bottom: 10%;
+        }
+        .gif img{
+            width: 300px;
         }
     }
     

@@ -2,6 +2,8 @@
     --offset: 6px;
 }
 
+/* Texto que rota */
+
 .word_rotation{
     display: flex;
     justify-content: flex-end;
@@ -35,7 +37,6 @@
     position: relative;
     overflow: hidden;
     margin-top: var(--offset);
-
     display: flex;
     justify-content: flex-end;
   }
@@ -78,3 +79,29 @@
   .mask span:nth-child(4) {
     background-image: linear-gradient(45deg, #fa7671 50%, #f45f7f);
   }
+
+/* Media Queys Responsive*/
+
+@media (max-width: 900px) {
+  :root{
+    --offset: 5px;
+  }
+
+  .word_rotation{
+    min-height: fit-content;
+  }
+  .word_rotation h2{
+    font-size: 20px;
+    width: fit-content;
+  }
+  .mask{
+    height: 30px;
+  }
+  .mask span{
+    top: 5px;
+  }
+}
+
+@media (max-width: 300px){
+
+}
