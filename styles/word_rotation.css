@@ -100,6 +100,13 @@
   .mask span{
     top: 5px;
   }
+  .mask span[data-show] {
+    transition: .8s transform ease-in-out;
+  }
+  
+  .mask span[data-up] {
+    transition: .8s transform ease-in-out;
+  }
 }
 
 @media (max-width: 300px){
