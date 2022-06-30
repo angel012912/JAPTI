@@ -141,7 +141,7 @@
         </div>
         <div class="contacto" id="contacto">
             <h3>Contáctanos</h3>
-            <form action="#" onsubmit = submitHandler()>
+            <form method="POST" id="formulario">
                 <div class="elementosForm">
                     <div class="elementoForm formName">
                         <input class="nameInput" name="name" type="text" required>
@@ -152,7 +152,7 @@
                         <label class="emailLabel" for="email">Correo</label>
                     </div>
                     <div class="elementoForm formComment">
-                        <textarea class="commentInput" name="commentInput" cols="30" rows="10" required></textarea>
+                        <textarea class="commentInput" name="commentInput" cols="30" rows="10"></textarea>
                         <label class="commentLabel" for="commentInput">Comentarios</label>
                     </div>
                 </div>
@@ -172,6 +172,7 @@
     <!-- SCRIPTS -->
     <script src="./JS/navBar.js"></script>
     <script src="./JS/word_rotation.js" defer></script>
+    <script src="./JS/submit.js"></script>
 </body>
 
 </html>

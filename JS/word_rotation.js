@@ -5,8 +5,6 @@ setInterval(function () {
   }else{
     var next = document.getElementById("primerTexto");
   }
-
-  console.log(next);
   const up = document.querySelector("span[data-up]");
 
   if (up) {
