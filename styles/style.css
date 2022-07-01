@@ -383,7 +383,12 @@ section#inicio {
     animation: spinning 7s infinite;
     transform-style: preserve-3d;
     animation-timing-function: linear;
-    
+}
+
+.back a {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--primario);
 }
 
 /*
