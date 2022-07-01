@@ -794,9 +794,14 @@ box-shadow: 0px 0px 0px;
 }
 
 /******************************** MEDIA QUERYS ********************************/
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
     .back h6 {
         font-size: 0.3em;
+    }
+
+    .front h6 {
+        margin-top: 5px;
+        font-size: 0.6em;
     }
 }
 
@@ -862,9 +867,13 @@ box-shadow: 0px 0px 0px;
     .back h6 {
         font-size: 0.35em;
     }
+
+    .front {
+        margin: 10px 0;
+    }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 400px) {
     .content {
         margin: 0;
     }
@@ -890,5 +899,9 @@ box-shadow: 0px 0px 0px;
     .eslogan {
         font-size: 2rem;
         text-align: center;
+    }
+
+    .back h6 {
+        font-size: 0.4em;
     }
 }
