@@ -83,10 +83,6 @@
 /* Media Queys Responsive*/
 
 @media (max-width: 900px) {
-  :root{
-    --offset: 5px;
-  }
-
   .word_rotation{
     min-height: fit-content;
   }
