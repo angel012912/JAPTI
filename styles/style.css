@@ -11,7 +11,7 @@
 :root {
     --primario: #E7E6E1;
     --secundario: #F7F6E7;
-    --terciario: rgb(242, 161, 84);
+    --terciario: #f2a154;
     --cuarto: rgb(17, 45, 78);
     --font: Helvetica;
     --title: 3rem
@@ -78,7 +78,7 @@ body {
 }
 
 .navbar li:hover {
-    transform: scale(1.5);
+    transform: scale(1.3);
     transition: .8s;
 }
 
@@ -107,7 +107,7 @@ body {
     z-index: 1000;
     width: 100%;
     background-color: var(--primario);
-    opacity: 1;
+    opacity: .95;
 }
 
 /******************************** INICIO ********************************/
@@ -565,6 +565,7 @@ section#inicio {
 .slides img {
     max-width: 20%;
     display: inline-block;
+    border-radius: 10px;
 }
 
 /******************************** CONTACTO ********************************/
