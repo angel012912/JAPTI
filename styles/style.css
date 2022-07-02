@@ -303,7 +303,7 @@ section#inicio {
 
 .quienesSomos h3 {
     font-size: var(--title);
-    color: var(--cuarto);
+    color: var(--terciario);
 }
 
 .japtiQS {
@@ -335,7 +335,7 @@ section#inicio {
 
 .servicios h3 {
     font-size: var(--title);
-    color: var(--cuarto);
+    color: var(--terciario);
 }
 
 .cajaServicios {
@@ -356,7 +356,7 @@ section#inicio {
     aspect-ratio: 1;
     width: 100%; /*Este se puede editar para hacer los cuadrados más pequeños*/
     outline: none;
-    color: var(--cuarto);
+    color: var(--terciario);
     /*border: 2px solid var(--cuarto);
     box-shadow: 3px 3px 0px;*/
 }
@@ -412,9 +412,9 @@ section#inicio {
     height: 100%;
     position: absolute;
     background-color: rgb(242, 161, 84, .9);
-    border: 2px solid var(--cuarto);
+    border: 2px solid var(--terciario);
     border-radius: 5px;
-    color: var(--cuarto);
+    color: var(--terciario);
     font-weight: bold;
     line-height: 14em;
     text-align: center;
@@ -518,7 +518,7 @@ section#inicio {
 */
 
 .back {
-    background: var(--cuarto);
+    background: var(--terciario);
     color: var(--primario);
     transform: rotateY(180deg);
     text-align: justify;
@@ -535,19 +535,26 @@ section#inicio {
 
 
 /******************************** PORTAFOLIO ********************************/
-.clientes {
+.trayectorias p {
+    text-align: justify;
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+    color: var(--cuarto);
+    font-weight: lighter;
+}
+.trayectorias {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 100px 0px;
+    margin: 170px 0px;
 }
 
-.clientes h3 {
+.trayectorias h3 {
     font-size: var(--title);
-    color: var(--cuarto);
+    color: var(--terciario);
 }
 
-.clientes h4 {
+.trayectorias h4 {
     font-size: 1.5rem;
     color: var(--cuarto);
     text-align: center;
@@ -578,7 +585,7 @@ section#inicio {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 100px 0px;
+    margin: 200px 0px;
 }
 
 .contacto h3 {
