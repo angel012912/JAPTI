@@ -30,6 +30,11 @@ body {
     margin: 0 15rem;
 }
 
+.mostrar{
+    animation: reveal 2s forwards;
+}
+
+
 @keyframes reveal{
     to{
         opacity: 1;
@@ -292,7 +297,9 @@ section#inicio {
     align-items: center;
     justify-content: center;
     text-align: center;
+    opacity: 0;
 }
+
 
 .quienesSomos h3 {
     font-size: var(--title);
@@ -324,6 +331,7 @@ section#inicio {
     flex-direction: column;
     align-items: center;
     margin: 100px 0px;
+    opacity: 0;
 }
 
 .servicios h3 {
@@ -528,18 +536,21 @@ section#inicio {
 
 
 /******************************** PORTAFOLIO ********************************/
+
+.trayectorias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 170px 0px;
+    opacity: 0;
+}
+
 .trayectorias p {
     text-align: justify;
     font-size: 1.5rem;
     line-height: 3.5rem;
     color: var(--cuarto);
     font-weight: lighter;
-}
-.trayectorias {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 170px 0px;
 }
 
 .trayectorias h3 {
@@ -579,6 +590,7 @@ section#inicio {
     flex-direction: column;
     align-items: center;
     margin: 200px 0px;
+    opacity: 0;
 }
 
 .contacto h3 {

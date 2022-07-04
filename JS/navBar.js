@@ -1,6 +1,6 @@
-const punto = document.getElementById('inicio');
+const elemento = document.getElementById('inicio');
 
-const cargarImagen = (entradas, observador) => {
+const mostrarNavBar = (entradas, observador) => {
 	entradas.forEach((entrada) => {
     let nav = document.getElementById('nav');
 		if(entrada.isIntersecting){
@@ -11,10 +11,10 @@ const cargarImagen = (entradas, observador) => {
 	});
 }
 
-const observador = new IntersectionObserver(cargarImagen, {
+const observador = new IntersectionObserver(mostrarNavBar, {
 	root: null,
 	rootMargin: '500px 0px 100px 0px',
 	threshold: 1.0
 });
 
-observador.observe(punto);
+observador.observe(elemento);
