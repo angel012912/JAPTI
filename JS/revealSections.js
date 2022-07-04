@@ -16,11 +16,17 @@ const mostrarElemento = (entradas, observador) => {
 
 const observador1 = new IntersectionObserver(mostrarElemento, {
 	root: null,
-	rootMargin: '350px 0px',
+	rootMargin: '30% ',
+	threshold: 1.0
+});
+
+const observador2 = new IntersectionObserver(mostrarElemento, {
+	root: null,
+	rootMargin: '60% 0px 90% 0px ',
 	threshold: 1.0
 });
 
 observador1.observe(primerElemento);
-observador1.observe(segundoElemento);
+observador2.observe(segundoElemento);
 observador1.observe(tercerElemento);
 observador1.observe(cuartoElemento);
